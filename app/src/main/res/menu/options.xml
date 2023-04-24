@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart"
+        app:actionLayout="@layout/custom_action_item_layout"
+        app:showAsAction="always"/>
+
+    <item
+        android:icon="@drawable/ic_menu_sort"
+        app:showAsAction="always"
+        android:title="sortby">
+        <menu>
+            <item
+                android:id="@+id/menuSortRating"
+                android:title="Sort by Rating" />
+            <item
+                android:id="@+id/menuSortTitle"
+                android:title="Sort by Title" />
+            <item
+                android:id="@+id/menuSortDate"
+                android:title="Sort by Release Date" />
+            <item
+                android:id="@+id/menuSortPopularity"
+                android:title="Sort by popularity" />
+        </menu>
+    </item>
+</menu>
